@@ -9,13 +9,13 @@ Deployed link of website &nbsp; ![Project-08](https://img.shields.io/badge/Proje
 
 <br>
 
-# [Link to Project 08](webdesignlandingpage.netlify.app)
+# [Link to Project 08](https://webdesignlandingpage.netlify.app)
 
 <br>
 
 # Preview of the Project.
 
-![Preview](/preview.png)
+![Preview](./preview.png)
 
 <br>
 
