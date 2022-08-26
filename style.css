@@ -14,26 +14,35 @@ body {
   background-size: 770px;
   background-repeat: no-repeat;
 }
+
 .main-div {
   margin-top: 20px;
   margin-left: 120px;
 }
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
 nav {
   display: flex;
   justify-content: space-between;
 }
-
+.hamburger {
+  display: none;
+}
 .nav-items {
   display: flex;
   align-items: center;
   margin-left: 200px;
 }
+
 .nav-item {
   margin: 0 20px;
   font-size: 16px;
   color: #3e4794;
   cursor: pointer;
 }
+
 .signin-btn {
   margin: 20px 150px;
   padding: 5px 20px;
@@ -43,19 +52,26 @@ nav {
   background: linear-gradient(-285deg, #965cf2 10%, #ee7acf 90%);
   cursor: pointer;
 }
+
+/* ------------------------------ */
+/* ---------- left section ------------ */
+/* ------------------------------ */
 .intro-section {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
+
 .left-section {
   margin-top: 70px;
   padding: 25px;
 }
+
 .left-section h1 {
   font-size: 90px;
   color: #3e4794;
 }
+
 .left-section h4 {
   margin-top: 40px;
   width: 350px;
@@ -63,6 +79,7 @@ nav {
   color: #666774;
   font-weight: 100;
 }
+
 .learn-more-btn {
   margin-top: 50px;
   padding: 21px 60px;
@@ -74,6 +91,10 @@ nav {
   font-weight: 600;
   cursor: pointer;
 }
+
+/* ------------------------------ */
+/* ---------- right section ------------ */
+/* ------------------------------ */
 .imgs-div {
   height: 700px;
   display: inline-block;
@@ -86,13 +107,77 @@ nav {
   height: 700px;
   margin-top: 20px;
 }
+
 .vector-img {
   position: relative;
   bottom: 150px;
   left: 120px;
 }
+
 .vector-dot {
   position: relative;
   bottom: 240px;
   left: 70px;
+}
+
+
+
+/* ------------------------------ */
+/* ---------- media queries ------------ */
+/* ------------------------------ */
+@media screen and (max-width: 600px) {
+  .intro-section {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav img {
+    margin-left: 20px;
+  }
+
+  .main-div {
+    margin: 0;
+  }
+
+  .nav-items {
+    visibility: hidden;
+  }
+
+  .signin-btn {
+    visibility: hidden;
+  }
+
+  .main {
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10px;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .left-section {
+    margin-top: 25rem;
+    margin-left: 30px;
+  }
+
+  .left-section {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 14rem;
+    margin-top: 1.5rem;
+  }
+
+  .hamburger img {
+    width: 41px;
+  }
 }
